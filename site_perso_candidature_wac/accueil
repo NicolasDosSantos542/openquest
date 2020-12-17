@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+         <link rel="stylesheet" href="style.css" />
+        <title>Openquest</title>
+    </head>
+
+    <body>
+    	<header>
+    		<div class="home">
+    		<h1><a href="accueil.html" style="color: green">OPENQUEST</a></h1>
+    		<p>Un site sur la V2 du jeu de rôle <a href="https://d100.fr/jeux/openquest/" target="_blank">Openquest</a></p>
+    		</div>
+    		<ul class="nav">
+    			<li class="nav1"><a href="apropos.html">A propos</a></li>
+    			<li class="nav1">Introduction</li>
+    			<li class="nav1"><a href="personnages.html">Les personnages</a></li>
+    			<li class="nav1">Les Compétences</li>
+    			<li class="nav1">Equipement</li>
+    			<li class="nav1">Combat</li>
+    			<li class="nav1">La Quête</li>
+    			<li class="nav1">la Magie</li>
+    			<li class="nav1"><a href="creatures.html">Créatures</a></li>
+    			<li class="nav1">Trésors</li>
+    			<li class="nav1">L'Empire de Gatan</li>
+    		</ul>
+
+    	</header>
+    	<SECTION class="main">
+    		<nav class="menu">
+    			<ul class=nav2>
+    				<li>...partie</li>
+    				<li>...partie</li>
+    				<li>...partie</li>
+    				<li>...partie</li>
+    				<li>...partie</li>
+    				<li>...partie</li>
+    				<li>...partie</li>
+    				<li>...partie</li>
+    			</ul>
+    		</nav>
+    		<article class="article">
+    			<p>Bienvenue sur le site du jeu de rôle OpenQuest V2!<br /> Ce site a pour objectif de mettre en ligne les règles du jeu gratuit <em>OpenQuest V2</em>, créé par Newt Newport dans sa version originale, et traduit en français par James "Arasmo" Manez. Le site contiendra a terme l'ensembles des règles présentes dans le livre de base openquest, disponible sur le site <a href="https://d100.fr/jeux/openquest/" target="_blank">d100.fr</a> </p>
+    		</article>
+
+    	</SECTION>
+    	<footer class="footer">
+    		<p class="footer1">contact: nicolas.dossantos.542@gmail.com<br />
+    		le jeu OpenQuest est sous license OGL (OPEN GAME License)</p>
+    		<p class="footer1">Version originale: <a href="https://d101games.com/about/">Newt Newport</a><br />
+    		Version française: <a href="https://d100.fr/a-propos/">James « Arasmo » Manez</p>
+
+       	</footer>
+   	</body>

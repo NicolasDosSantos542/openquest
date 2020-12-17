@@ -1,0 +1,162 @@
+@font-face 
+{
+	font-family: 'EBGaramond08-Regular';
+	src: url(font\EBGaramond\otf\EBGaramond08-Regular.otf) format(otf);
+	src: url(font\EBGaramond\ttf\EBGaramond08-Regular.ttf) format(ttf);
+}
+
+
+header
+{
+	background-color: black;
+	color: #007948;
+	display: flex;
+	position: relative;
+	font-family: EBGaramond08-Regular, Georgia, Times New Roman, Arial;
+	height: 200px;
+}
+
+body
+{
+	font-family: EBGaramond08-Regular, Georgia, Times New Roman, Arial;
+
+}
+
+h1, h2, h3
+{
+	color: #007948; 
+}
+
+.home
+{
+	color: #007948;
+}
+ul
+{
+	list-style: none;
+}
+.nav
+{
+	display: flex;
+	font-size: small;
+	align-items: flex-end;
+	position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.nav1
+{
+	padding-right: 20px;
+	padding-right: 20PX
+	margin: 1px;
+}
+.main
+{
+	display: flex;
+    background-image: url(background-Parchemin.jpg);
+	background-attachment: fixed;
+	color: black;
+}
+.menu
+{
+
+}
+.article
+{
+	border: solid 1px black;
+	margin: auto;
+	padding: 50px;
+	text-align: justify;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	max-width: 800px;
+	overflow: auto;
+	
+
+}
+.footer
+{
+	height: 90px;
+	 color: #4A4A4A;
+    background: #e8e8e8;	
+    padding: 5px 0;
+    font-size: 11px;
+    line-height: 22px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+aside
+{
+
+	border: solid 1px black;
+	float: right;
+	margin: 5px;
+	padding: 5px;
+	
+}
+
+#table
+{
+    border-collapse: collapse; 
+}
+#table td
+{
+    border: 1px solid black;
+    margin: 5px;
+
+}
+
+#cadre
+{
+	align-items: center;
+	width: 300px;
+	margin: auto;
+	max-width: 600px;
+
+}
+
+.galerie
+ {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#navmagie
+{
+	display: flex;
+	align-items: flex-end;
+	position: top;
+	justify-content: space-around;
+
+}
+
+.tableaudesort
+{
+border-collapse: collapse;
+}
+
+.tableausurligne
+{
+background-color: #cbd8cb
+}
+
+.listedesorts
+{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.sort
+{
+	margin : 1px;
+	padding: 5px;
+	width: 380px;
+
+
+}

@@ -1,0 +1,722 @@
+/** ----------------------------------------------------------
+ *
+ * Contains the main layout of the page and the individual styles.
+ * Acts as the main stylesheet for theme.
+ *
+ *		1. OOCSS GRID
+ *		2. MAIN LAYOUT
+ *		3. HEADER
+ *			- Brand
+ *			- Search Form
+ *		4. Navigation
+ *			- Primary Navigation
+ *			- tablet Navigation
+ *			- Secondary Navigation
+ *			- Secondary Nav 2-5 Levels deep
+ *		5. Mixed
+ *		6. Footer
+ *		7. Page Specific Layout
+ *			- Homepage
+ *			- Search Results
+ *		8. Device and Responsive Layout
+ *			- Breakpoint 830px
+ *				- Search Form
+ *				- Main Content
+ *		9. Print Styles
+ *			- Simple Theme custom print styles
+ *
+ * ------------------------------------------------------- */
+
+.line, /* line - Groups units on one horizontal line. Note: for mobile layout units may be stacked to avoid horizontal scrolling. */
+.lastUnit {
+	overflow:hidden;
+	padding:0 10px 0 10px;
+}
+
+.unit { /* unit - Base class which divides a line into sections (columns). */
+	float:left;
+	padding:0 10px 0 10px;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box; /* box-sizing:border-box; creates a box-model where 
+	padding and border are NOT added onto the width - they are included in the width, 
+	so a 200px wide element with 20px padding will be 200px, NOT 240px wide */
+}
+.unitRightv { /* Use this class if you want to offset a column eg: |--content(.unit)--|--content(.unit)--|--no-content--|--no-content--|--content(.unitRighttv)--| */
+	float:right;
+}
+
+/* sizeXofY - Extends unit. Indicates the fractional width of the unit, for example size3of4 would take up three quarters, or 75%, of the horizontal space. 
+The following fractions are supported: 1, 1/2, 1/3, 2/3, 1/4, 3/4, 1/5, 2/5, 3/5, 4/5 */
+/* It is possible to add more columns if you wish you will just have to add the fractions that are missing eg: .size1of6 {width:16.66666%;} */
+
+.size1of1 {
+	float:none;
+}
+.size1of2 {
+	width:50%;
+}
+.size1of3 {
+	width:33.33333%;
+}
+.size2of3 {
+	width:66.66666%;
+}
+.size1of4 {
+	width:25%;
+}
+.size3of4 {
+	width:75%;
+}
+.size1of5 {
+	width:20%;
+}
+.size2of5 {
+	width:40%;
+}
+.size3of5 {
+	width:60%;
+}
+.size4of5 {
+	width:80%;
+}
+.lastUnit { /* lastUnit - Extends unit. Applied to the last child of every line. */
+	float:none;
+	width:auto;
+	_position:relative; /* Bug fix for IE6 - Internet Explorer 6 and below wouldn't fail on properties that were prefixed with non-alphanumeric characters. 
+	meaning that anything prefixed with _ wouldn't be picked up by any other browsers */
+	_left:-3px;
+	_margin-right:-3px;
+}
+
+/* MAIN LAYOUT */
+
+body {
+    margin: 0;
+    background:#e8e8e8;
+    min-width: 240px; 
+    -webkit-text-size-adjust: none; /* The text size is not adjusted for Safari on iPhone */
+}
+	.ie7 body,
+	.ie8 body {
+	    min-width: 860px; /* media queries are not supported in ie7/8 without a polyfill */
+	}
+	.main {
+	    background: #fff;
+	    padding: 0px 0 0px 0;
+	    min-height: 300px;
+	}
+	.inner {
+	    max-width: 1100px;
+	    margin: 0 auto;
+	    padding: 0 30px 0 30px;
+	}
+	.ie6 .inner {
+	    width: 960px;
+	}
+	.no-sidebar .content-container {
+	    float: none;
+	    width:100%; /* makes content container full width when there is no sidebar */
+	}
+	.sidebar { /* this is the sidebar element */
+	    margin-top: 12px;
+	}
+	.no-sidebar .sidebar {
+		display: none;
+	}
+	.content-container {
+	    margin-top: 20px;
+	}
+
+/* HEADER */
+
+.header {
+    background: #161616;
+}
+	.header .inner {
+	    padding-top: 28px;
+	    position: relative;
+	    min-height: 72px;
+	}
+
+	/* Brand */
+	header .brand {
+	    float: left;
+	    color: #fff;
+	    display: inline-block;
+	}
+		.brand {
+		    margin: 0; padding: 0;
+		    font-family: Helvetica, Arial, sans-serif;		/* AideDD Nom du site */
+		    font-size: 48px; line-height:48px;
+			font-weight:bold;
+		    color: #fff;
+		}
+		.brand p {
+		    margin-bottom: 14px;
+			font-family: Verdana, Arial, sans-serif;		/* AideDD sous titre du site */
+		    font-size: 12px; line-height:12px; padding-top:4px;
+			font-weight:normal;
+		    color: #BBB;			
+		}
+
+	/* Search form */
+
+	.search-bar {
+		position: absolute;
+		right: 4px;
+		top: -4px;
+		width:302px;
+	}
+		.search-dropdown-icon {
+		    display: none; /* hides search-dropdown-icon when site is at full width - media queries set it to display:block when at mobile/tablet width */
+		}
+
+/* NAVIGATION */
+
+	/* Primary navigation */
+	.header .inner .unit {
+		position: relative; /* used to position the main navigation */
+	}
+	.header .primary ul {
+		position:absolute;
+		bottom:0;
+		right:0; /* positions the main navigation */
+		line-height:10px;
+	}
+	.header .primary li {
+	    float: left;
+	    padding-bottom: 14px;
+	    margin: -8px 5px;
+	    position: relative;
+	    white-space: nowrap; /* forces text to never wrap onto a second line */
+	}
+	.header .primary li a {
+	    color: #989898;		/* AideDD menu principal non selectionnÃ© */
+	    font-size: 15px;
+	    font-family: Helvetica, Arial, sans-serif;
+	    padding: 6px 8px;
+	    font-weight: bold;
+	    display: block;
+	}
+	.header .primary li a:hover {
+	    color: #fff;
+	}
+	.header .primary li.section a,
+	.header .primary li.current a {
+	    color: #fff;
+	}
+	.header .primary li.section:after,
+	.header .primary li.current:after {	/* AideDD pour awesomefont */
+	}
+
+	.header .primary li span.fa-caret-up { /* AideDD pour awesomefont */
+		visibility:hidden;
+	    display: block;
+	    position: absolute;
+	    left: 50%;
+	    margin-left: -2px;
+	    bottom: 3px;
+	}
+
+	.header .primary li.current span.fa-caret-up { /* AideDD pour awesomefont */
+		visibility:visible;
+	}
+
+	.header .primary li span.fa-chevron-right { /* AideDD pour awesomefont */
+		visibility:hidden;
+	}
+
+	/* Tablet Navigation */
+	/* When navigation and logo overlap tablet-nav is initialized */
+	.tablet-nav .brand p {
+	    margin-bottom: 0;
+	}
+	.tablet-nav .header .inner {
+	    padding-top: 20px;
+	}
+	.tablet-nav .header .primary ul {
+	    float: left;
+	    clear: both;
+	    position: relative;
+	    margin: 20px 0 0 -13px;
+	    white-space: nowrap;
+	    right: auto; /* resets the right property value that is set for the desktop site */
+	}
+		.tablet-nav .header .primary ul li {
+		    white-space: nowrap;
+		}
+			.tablet-nav .header .primary ul li a { /* there is no hover on touch devices so no transition on hover is necessary */
+			    -moz-transition: none;
+			    -webkit-transition: none;
+			    transition: none;
+			}
+	.tablet-nav .footer .right {
+	    float: left;
+	    width: 100%;
+	}
+
+	/* Secondary navigation */
+	.main .secondary h3 {
+	    font-size: 14px;
+	    color: #AAA;
+	    margin: 0 0 8px 0;
+	    text-transform: uppercase;
+	    font-family: Helvetica, Arial, sans-serif;	/* Nom du menu a gauche */
+	    font-weight: normal;
+	}
+	.main .secondary span.fa-caret-right {font-size: 16px; margin-right:5px; display: none;}
+	.main .secondary span.fa-caret-down  {font-size: 16px; margin-right:5px; display: inline;}
+
+	.main .secondary {
+	    border-bottom: 1px solid #e5e5e5;
+	}
+		.main .secondary ul {
+			display: inline;
+		    padding: 0;
+		    margin: 0;
+		}
+		.main .secondary li {
+		    border-top: 1px solid #e5e5e5;
+		    position: relative;
+		    list-style-type: none;
+		    margin-bottom: 0;
+		}
+			.main .secondary li .arrow { 
+			    color: #b80000;
+			    padding-right: 5px;
+			    display: block;
+			    font-size: 15px;
+			    line-height: 20px;
+			    position: absolute;
+			    left: 2px;
+			    top: 0px;
+			    -moz-transition: 0.2s; /* this transition moves the arrow from left:2px to left:6px */
+			    -webkit-transition: 0.2s;
+			    transition: 0.2s;
+			}
+		.main .secondary li a:hover .arrow {
+		    left: 6px; /* this sets the final position for the arrow transition */
+		}
+		.main .secondary li a { /* side nav link styling */
+		    padding: 4px 0;			/* Aidedd */
+		    display: block;
+		    text-transform: uppercase;
+		    font-size: 11px;
+		    color: #333;
+		    line-height: 14px;		/* Aidedd */
+		    border-bottom: none;
+		    font-family: Helvetica, Arial, sans-serif;
+		}
+		.main .secondary li .text {
+		    padding-left: 24px;
+		    display: block;
+		}
+		.main .secondary li.current a.current {
+			color: #b80000;
+			background-color: #D0D0D0;
+		}
+		.main .secondary li.section,
+		.main .secondary li.current {
+		    background-color: #e8e8e8;			/* AideDD section selectionnÃ©e dans menu */
+		}
+			.main .secondary li.section a,
+			.main .secondary li.current a {
+			    color: #000;
+			}
+		
+
+		/* Secondary navigation 2-5 levels deep */
+		.main .secondary ul ul {
+			display: none;
+		}
+		.secondary ul li.current ul,
+		.secondary ul li.section ul { /* Only show child pages from selected parent */
+			display: block;
+		}
+		.secondary li.current ul ul {
+			display: none;
+		}
+		.main .secondary ul ul li a { padding-left: 10px;} /* Indent all sidebar navigation levels*/
+			.main .secondary ul ul li a .arrow { left: 12px;}
+			.main .secondary ul ul li a:hover .arrow { left: 16px;}
+
+		.main .secondary ul ul ul li a { padding-left: 20px;}
+			.main .secondary ul ul ul li a .arrow { left: 22px;}
+			.main .secondary ul ul ul li a:hover .arrow { left: 26px;}
+
+		.main .secondary ul ul ul ul li a { padding-left: 30px;}
+			.main .secondary ul ul ul ul li a .arrow { left: 32px;}
+			.main .secondary ul ul ul ul li a:hover .arrow { left: 36px;}
+			
+		.main .secondary ul ul ul ul ul li a { padding-left: 40px;}
+			.main .secondary ul ul ul ul ul li a .arrow { left: 32px;}
+			.main .secondary ul ul ul ul ul li a:hover .arrow { left: 36px;}
+
+		.main .secondary li a:hover,
+		.main .secondary li.section a:hover,
+		.main .secondary li.current a:hover {
+			color: #b80000;
+		}
+
+/* MIXED */
+
+header:after,
+.main:after,
+#Root:after,
+.search-bar:after,
+header .inner:after,
+footer:after { /* clearfix */
+    height: 0;
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+/* FOOTER */
+
+.footer {
+    color: #4A4A4A;
+    background: #e8e8e8;	/* AideDD couleur bandeau footer */
+    padding: 5px 0;
+    font-size: 11px;
+    line-height: 22px;
+}
+	#Breadcrumbs ol {list-style-type: none;}	/* AideDD */
+	#Breadcrumbs ol li {display: inline; color: #999;} /* AideDD */
+	#Breadcrumbs ol li+li:before {content: "\203A"} /* AideDD */
+
+	.footer a span {
+	    color: #222;
+	}
+	.footer a span:hover {
+	    color: #B90000;
+	}
+	.footer .left {
+	    float: left;
+	    color: #000;
+	    display: block;
+	    margin-bottom: 0px;
+	}
+	.footer .right {
+	    float: right;
+	    display: block;
+	    margin-bottom: 0px;
+	}
+	.footer span {
+	    padding: 0 3px;
+	    color: #bbb;
+	}
+	.footer .primary,
+	.footer .primary ul {
+	    display: inline;
+	    margin: 0;
+	    padding: 0;
+	}
+		.footer .primary li {
+		    display: inline;
+		}
+	.ie6 .footer .primary li,
+	.ie7 .footer .primary li { /* this is a bugfix for ie6/7 */
+	    display: inline;
+	    zoom: 1;
+	    margin-right: 10px;
+	}
+	.footer .primary li:after { /* adds '/' to separate the footer navigation items */
+	    padding: 0 3px 0 5px;
+	    content: '/';
+	    color: #e8e8e8;
+	}
+	.footer .e8e8e8 li:last-child:after {
+	    content: ''; /* makes sure last nav item doesn't have a '/' following it */
+	}
+	.footer .arrow {
+	    padding: 0 8px 0 5px;
+	    color: #b80000;
+	    font-size: 13px;
+	}
+	.footer .e8e8e8 .nav-open-button {
+	    display: none; /* the footer includes the e8e8e8 nav include - this makes sure the nav open close button doesn't show up */
+	}
+
+/* STYLE PERSO */
+
+div.blocNews		  	{padding:10px 15px 10px 15px; margin:8px 0 8px 0; min-height:170px; font-size:14px; line-height:19px; border:1px solid #ececec; border-radius:8px;}
+div.blocNews .blocTitre	{font-weight:bold; font-size:18px; line-height:24px; margin-bottom:6px}
+div.blocNews .blocDate  {line-height:15px; font-size:11px; color:#808080;}
+div.blocNews i			{float:right; position:relative; margin-left:15px; font-size:5rem; color:#444}
+div.blocNews .photo		{float:right; width:140px; height:140px; margin:0 0 10px 15px; border-radius:10px; background-color:#000; background-repeat:no-repeat; background-position:top center;}
+div.blocNews .photo		{float:right; width:140px; height:140px; margin:0 0 10px 15px; border-radius:10px; background-color:#000; background-repeat:no-repeat; background-position:top center;}
+
+div.blocSite iframe	 	{width:100%; height:342px}
+
+div.outils			{display:inline-block; width:80px; font-size:10px; line-height:15px; text-align:center; vertical-align:top; font-family:Verdana, Arial, sans-serif; margin-bottom:10px;}
+div.outils a		{color:#444;}
+div.outils a:hover	{border:none; color:#888;}
+div.outils i		{font-size:56px;}
+
+div.tools a	i		{color:#444;}
+div.tools a:hover i	{border:none; color:#888;}
+div.tools i			{float:left; font-size:38px; margin-right:8px}
+
+div.social			{text-align:center; margin-bottom:10px;}
+div.social a:hover	{border:none; color:#888;}
+div.social a		{font-size:24px; color:#444; padding:0 25px 0 25px}
+
+div.adsaccueil 	{text-align:center;}
+div.ads 		{text-align:center; margin:8px 0 8px 0;}
+/* pour quitter le jaune */
+.adsbygoogle { background: #FFF;}
+
+div.date			{font-size:11px; color:#888; text-align:right}
+
+/* DEVICE & RESPONSIVE LAYOUT */
+
+.header .nav-open-button {
+    display: none; /* removes the nav toggle button for desktop site */
+}
+#media-query-trigger {
+    /* instead of detecting the width of the window in simple/javascript/script.js it detects the visibility of this element (which is set using media queries) 
+    instead to trigger the hiding/showing of nav and search in mobile mode */
+    display: none;
+    visibility: hidden;
+}
+
+/* BREAKPOINT 830px */
+
+/* when changing the breakpoint below, change it ito the same value in the script.js file as well */
+@media only screen and (max-width: 830px) { 
+	body {
+	    max-width: 830px;
+	}
+	#media-query-trigger {
+	    visibility: visible;
+	}
+
+	div.content div.size1of2 {	/* AidEDD pour page sur 2 colonnes */
+		width:100%;
+	}
+	div.content div.unit {	/* AidEDD pour page sur 2 colonnes */
+		padding:0;
+	}
+
+	/* Navigation*/
+
+	.tablet-nav .header .brand {
+	    float: none;
+	    display: inline-block;
+	    margin-bottom: 6px;
+	}
+		.brand {
+			font-size:32px; line-height:32px; padding:0; margin:0;
+		}
+		.brand p {
+			font-size:12px; padding:0; margin:0;
+		}
+
+	.tablet-nav .header {
+	    padding: 0px;
+	}
+		.tablet-nav .header .inner {
+		    padding: 20px 0 0 0;
+		    min-height: 0;
+		}
+		.tablet-nav .header .primary .nav-open-button { /* styling and positioning of the nav toggle button */
+		    z-index: 100;
+		    width: 20px;
+		    height: 20px;
+		    position: absolute;
+		    right: 12px;
+		    top: 8px;
+		    display: block;
+		    cursor: pointer;
+		    font-size: 20px;
+		    color: #e8e8e8;
+
+		}
+		.tablet-nav .header .primary ul {
+		    z-index: 10;
+		    position: relative;
+		    display: none; /* initially hiding the navigation */
+		    float: left;
+		    margin: 0;
+		    padding: 0;
+		    white-space: normal;
+		    width: 100%;
+		}
+			.tablet-nav .header .primary ul li {
+			    width: 100%;
+			    margin: 0;
+			    padding: 0;
+			    float: none; /* displays list items vertically */
+			    background: none;
+			    position: relative;
+			    text-shadow: 0 1px #fff;
+			}
+			.tablet-nav .header .primary ul li span.fa-chevron-right { /* creates the arrow for the primary nav links */
+			    display: block;
+			    position: absolute;
+			    right: 20px;
+			    top: -3px;
+			    font-size: 14px;
+			    color: #999;
+			    text-align: center;
+			    vertical-align: middle;
+			    line-height: 38px;
+			}
+			.tablet-nav .header .primary ul li a,
+			.tablet-nav .header .primary ul li.current a,
+			.tablet-nav .header .primary ul li.section a { /* styling the top level nav links */
+			    padding: 10px 0 10px 22px;
+			    font-weight: bold;
+			    border-bottom: 1px solid #bbb;
+			    color: #434343;
+			    background: #e8e8e8;
+			}
+			.tablet-nav .header .primary ul li.current a,
+			.tablet-nav .header .primary ul li.section a {
+				background: #CCCCCC; /* makes background on current top level page slightly darker */
+			}
+			.tablet-nav .header .primary ul li a:hover {
+			    color: inherit;
+			}
+			.tablet-nav .header .primary span.fa-caret-up {
+			    display: none; /* hides the link arrow on current top level page */
+			}
+			.tablet-nav .tablet-nav .header nav.primary ul li {
+				padding: 0;
+			}
+
+			.tablet-nav	.header .primary li span.fa-chevron-right { /* AideDD pour awesomefont */
+				visibility:visible;
+			}
+
+	/* Search Form */
+	.search-bar { /* adds new styling to mobile search bar */
+	    width: 100%;
+	    position: relative;
+	    top: 0px;
+	    right: 0;
+	    display: none; /* hides searchbar initially */
+	    padding: 0; margin: 0;
+	    background-color: #161616;
+	}
+	.search-dropdown-icon { /* styling for search toggle button */
+	    display: block;
+	    cursor: pointer;
+	    width: 20px;
+	    height: 20px;
+	    position: absolute;
+	    right: 50px;
+	    top: 10px;
+	    font-size: 20px;
+	    text-align: center;
+	    line-height: 20px;
+	}
+
+	/* Main Content */
+	.main {
+	    padding: 0px 0 0px 0; /* decrease padding so that more content can fit on screen */
+	}
+	.content-container,
+	.sidebar {
+	    width: 100%; /* sidenav is now shown above the page content */
+	    margin-bottom:20px;
+	}
+
+	.main .inner {
+	    padding: 0 0px;
+	}
+
+	.main .secondary span.fa-caret-right {font-size: 16px; margin-right:5px; display:inline;}
+	.main .secondary span.fa-caret-down  {font-size: 16px; margin-right:5px; display:none;}
+	.main .secondary ul {display:none}
+
+	/* Secondry Nav */
+	.secondary li a {
+	    line-height: 24px;
+	}
+	.secondary li .arrow {
+	    line-height: 26px;
+	}
+	/* Footer */
+	.footer .right {
+	    float: left;
+	    width: 100%;
+	}
+	.footer .inner {
+	    padding: 0 5px 0 5px;
+	}
+
+	/* Perso */
+	div.blocNews		{font-size:15px; line-height:23px; padding:10px 5px 20px 5px; border-width:0 0 1px 0; border-radius:0;}
+	div.blocNews .blocDate  {font-size:12px;}
+	div.blocNews i		{position:relative; top:0px; margin-left:10px; font-size:5rem;} 
+
+	div.adsaccueil 		{padding-top:4px; padding-bottom:10px; border-bottom:1px solid #ececec;}
+
+    div.blocSite 		{display: none;}
+}
+
+/* Print Styles */
+
+/* Based on HTML5 boilerplate print styles */
+@media print {
+	* {
+	    color: black !important;
+	    box-shadow: none !important;
+	    text-shadow: none !important;
+	    filter: none !important;
+	    -ms-filter: none !important;
+	}
+	body {
+	    background: #FFF;
+	}
+
+.unit, .lastUnit, .inner {padding:0; margin:0;}
+	thead {
+	    display: table-header-group
+	}
+	tr {
+	    page-break-inside: avoid
+	}
+
+    .typography img {
+		display: none;
+	}
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    p, h2, h3, h4 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2, h3, h4 {
+        page-break-after: avoid;
+    }
+
+    /* Simple theme custom print styles */
+	.header,
+	.footer,
+    .nav-open-button,
+    .search-bar,
+    .search-dropdown-icon,
+	nav.secondary,			/* AideDD */
+	div.ads,				/* AideDD */
+	p.auteur,				/* AideDD */
+    nav.primary {
+	    display: none;
+	}
+
+	.size1of5 {
+		width:0%;	/* AideDD */
+	}
+	.size4of5 {
+		width:100%;	/* AideDD */
+	}
+}

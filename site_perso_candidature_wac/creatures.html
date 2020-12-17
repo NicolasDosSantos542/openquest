@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+         <link rel="stylesheet" href="style.css" />
+        <title>Openquest</title>
+    </head>
+
+    <body>
+    	<header>
+    		<div class="home">
+    		<h1><a href="accueil.html" style="color: green">OPENQUEST</a></h1>
+    		<p>Un site sur la V2 du jeu de rôle <a href="https://d100.fr/jeux/openquest/" target="_blank">Openquest</a></p>
+    		</div>
+    		<ul class="nav">
+    			<li class="nav1">A propos</li>
+    			<li class="nav1">Introduction</li>
+    			<li class="nav1">Les personnages</li>
+    			<li class="nav1">Les Compétences</li>
+    			<li class="nav1">Equipement</li>
+    			<li class="nav1">Combat</li>
+    			<li class="nav1">La Quête</li>
+                <li class="nav1"><a href="magie.html">la Magie</li>
+    			<li class="nav1"><a href="creatures.html">Créatures</a></li>
+    			<li class="nav1">Trésors</li>
+    			<li class="nav1">L'Empire de Gatan</li>
+    		</ul>
+
+    	</header>
+    	<SECTION class="main">
+    		
+    		<article class="article">
+                <h1>La Liste Des Monstres</h1>
+    			<p>Tous les monstres de cette liste sont décrits en utilisant le format suivant.<br />
+                <b>Caractéristiques</b><br />
+                Ce sont les caractéristiques de la créature. S’il manque une caractéristique, l’effet en termes de jeu est expliqué dans la section Règles Spéciales de la créature. Deux valeurs sont données pour chaque caractéristique : la première représente l’échelle de valeurs de la caractéristique pour l’espèce, permettant ainsi de déterminer la valeur aléatoirement, la seconde valeur entre parenthèses représente le score d’un individu moyen de l’espèce. Ce score moyen est utilisé pour calculer le reste des statistiques de la créature, afin que vous puissiez utiliser directement la créature en cours de partie. Par contre, si vous voulez déterminer aléatoirement les caractéristiques, il vous faudra réajuster les attributs et compétences qui en découlent.<br />
+                Une créature avec un score d’INT aléatoire est considérée comme étant douée de raison, capable de pensée logique et d’autodétermination, au contraire d’une créature avec une INT fixe (un simple nombre en INT, plutôt qu’un ou plusieurs dés). Les créatures à INT fixe privilégient l’instinct à la logique.<br />
+                <b>Attributs</b><br />
+                Les PV, le niveau de Blessure Grave, le Modificateur de Dégât et les Points de Magie de la créature. Encore une fois, ces attributs sont basés sur le score moyen d’un membre de l’espèce. Pour le Mouvement, une valeur est indiquée pour les différents modes de déplacement de la créature, si elle est capable de voler ou de nager. Enfin, sont précisés l’Armure portée habituellement, les Points d’Armure (PA) et le Facteur de Trésor.<br />
+                <b>Compétences</b><br />
+                À l’instar des PJ, les créatures possèdent des compétences. Sont signalées uniquement les compétences les plus significatives d’un individu moyen de l’espèce. À côté des compétences de combat sont indiqués entre parenthèses les dégâts de l’attaque, incluant le Modificateur de Dégât ainsi que les autres détails nécessaires. Sauf indication contraire, les créatures possédant plusieurs formes d’attaque ne peuvent en utiliser qu’une seule à la fois comme action d’attaque.<br />
+                <b>Magie</b><br />
+                Une suggestion du type de sorts qu’un membre moyen de l’espèce peut connaitre.<br />
+                <b>Règles Spéciales</b><br />
+                Cette section détaille les autres règles spécifiques à la créature.</p>
+
+                <table id="table"> 
+                <tr><td><a href="#basilic"> Basilic</a></td> <td><a href="#canard">Canard</td> <td><a href="#centaure">Centaure</a> </td> <td><a href="#demon_lierre">Démon: Lierre de sang</a></td><td><a href="#demon_wyrm">Demon: Wyrm de sang</a></td> </tr>
+                <tr><td><a href="#chrekker">Démon: Chreker</a></td> <td><a href="#demon_pentaghast">Démon: Pentaghast</a></td><td><a href="#demon_mante">Démon: la mante de la mort Silencieuse</a></td> <td><a href="#demon_crapaud">Démon: Le Crapaud Répugnant de Tsh'ss'koth</a></td><td><a href="#dragon">Dragon</a></td> </tr>
+                <tr><td><a href="#elementaire">Elémentaire</a></td> <td><a href="#elfe">Elfe</a></td> <td><a href="#esprits">Esprits</a></td> <td><a href="#fantome">Fantôme</a></td> <td><a href="#fee">Fée</a></td> </tr>
+                <tr><td><a href="#gargouille">Gargouille</a></td> <td><a href="#geant">Géant</a></td> <td><a href="#gobelin">Gobelin</a></td> <td><a href="#golem">Golem</a></td> <td><a href="#gorgone">Gorgone</a></td> </tr>
+                <tr><td><a href="#goule">Goule</a></td> <td><a href="#griffon">Griffon</a></td> <td><a href="#harpie">Harpie</a></td> <td><a href="#hippogriffe">Hippogriffe</a></td> <td><a href="#hommebete">Homme-bête</a> </td></tr>
+                <tr><td><a href="#hommedesabysses">Homme des Abysses</a></td> <td><a href="#hommelezard">Homme-lézard</a></td> <td><a href="#homoncule">Homoncule</a></td><td><a href="#lamia">Lamia</a></td><td><a href="#licorne">Licorne</a></td> </tr>
+                <tr><td><a href="#limon">Limon</a></td> <td><a href="#loupgarou">Loup-garou</a></td> <td><a href="#manticore">Manticore</a></td> <td><a href="#minotaure">Minotaure</a></td> <td><a href="#momie">Momie</a></td> </tr>
+                <tr><td><a href="#nain">Nain</a></td> <td><a href="#nymphes">Nymphes</a></td> <td><a href="#ogre">Ogre</a></td> <td><a href="#ogremutant">Ogre-Mutant</a></td> <td><a href="#orc">Orc</a></td></tr>
+                <tr><td><a href="#satyre">Satyre</a></td> <td><a href="#serpentdemer">Serpent de mer</a></td> <td><a href="#squelette">Squelette</a></td> <td><a href="#troll">Troll</a></td> <td><a href="#vampire">Vampire</a></td></tr>
+                <tr><td><a href="#wyverne">Wyverne</a></td> <td><a href="#zombi">Zombi</a></td></tr>
+                </table>
+
+                <div class="galerie">
+                    <div id="cadre"><img id="basilic" src="creatures\basilic.jpg" alt="basilic" title="basilic"><p><h3 href="">Basilic</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="canard" src="creatures\canard.jpg" alt="canard" title="canard"><p><h3 href="">Canard</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="centaure" src="creatures\centaure.jpg" alt="centaure" title="centaure"><p><h3 href="">Centaure</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+
+                     <div id="cadre"><img id="demon_lierre" src="creatures\demon_lierre.jpg" alt="demon_lierre" title="demon_lierre"><p><h3 href="demon_lierre">Démon: Lierre de Sang</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                     <div id="cadre"><img id="demon_wyrm" src="creatures\demon_wyrm.jpg" alt="demon_wyrm" title="demon_wyrm"><p><h3>Démon: Wyrm de Sang</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+
+                    <div id="cadre"><img  id="chrekker" src="creatures\chrekker.jpg" alt="Chrekker" title="Chrekker"><p><h3>Démon: Chrekker</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                     <div id="cadre"><img id="demon_pentaghast" src="creatures\demon_pentaghast.jpg" alt="demon_pentaghast" title="demon_pentaghast"><p><h3>Démon: Pentaghast</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="demon_mante" src="creatures\demon_mante.jpg" alt="Démon Mante" title="Démon Mante"><p><h3>Démon: la mante de la mort Silencieuse</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="demon_crapaud" src="creatures\demon_crapaud.jpg" alt="Démon Crapaud" title="demon_crapaud"><p><h3>Démon: Le Crapaud Répugnant de Tsh'ss'koth</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    
+
+                    <div id="cadre"><img id="dragon" src="creatures\dragon.jpg" alt="dragon" title="dragon"><p><h3>Dragon</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="elementaire" src="creatures\elementaire.jpg" alt="elementaire" title="elementaire"><p><h3>Elémentaire</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="elfe" src="creatures\elfe.jpg" alt="elfe" title="elfe"><p><h3>Elfe</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="esprits" src="creatures\esprits.jpg" alt="esprits" title="elementaire"><p><h3>Esprits</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="fantome" src="creatures\fantome.jpg" alt="fantome" title="fantome"><p><h3>Fantômes</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="fee" src="creatures\fee.png" alt="fee" title="fee"><p><h3>Fées</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+
+                    <div id="cadre"><img id="gargouille" src="creatures\gargouille.jpg" alt="gargouille" title="gargouille"><p><h3>Gargouilles</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="geant" src="creatures\geant.jpg" alt="geant" title="geant"><p><h3>Géants</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="gobelin" src="creatures\gobelin.jpg" alt="gobelin" title="gobelin"><p><h3>Gobelins</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="golem" src="creatures\golem.jpg" alt="golem" title="golem"><p><h3>Golem</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="gorgone" src="creatures\gorgone.jpg" alt="gorgone" title="gorgone"><p><h3>Gorgone</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="goule" src="creatures\goule.jpg" alt="goule" title="goule"><p><h3>Goule</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="griffon" src="creatures\griffon.jpg" alt="griffon" title="griffon"><p><h3>Griffon</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="harpie" src="creatures\harpie.jpg" alt="harpie" title="harpie"><p><h3>Harpie</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="hippogriffe" src="creatures\hippogriffe.jpg" alt="hippogriffe" title="hippogriffe"><p><h3>Hippogriffe</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="hommebete" src="creatures\hommebete.jpg" alt="hommebete" title="hommebete"><p><h3>Hommes-bêtes</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="hommedesabysses" src="creatures\hommedesabysses.jpg" alt="hommedesabysses" title="hommedesabysses"><p><h3>Hommes des Abysses</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="hommelezard" src="creatures\hommelezard.jpg" alt="hommelezard" title="hommelezard"><p><h3>Hommes Lézards</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="homoncule" src="creatures\homoncule.jpg" alt="homoncule" title="homoncule"><p><h3>Homoncules</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="lamia" src="creatures\lamia.jpg" alt="lamia" title="lamia"><p><h3>Lamia</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="licorne" src="creatures\licorne.jpg" alt="licorne" title="licorne"><p><h3>Licorne</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="limon" src="creatures\limon.jpg" alt="limon" title="limon"><p><h3>Limon</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="loupgarou" src="creatures\loupgarou.jpg" alt="loupgarou" title="loupgarou"><p><h3>Loup-Garou</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="manticore" src="creatures\manticore.jpg" alt="manticore" title="manticore"><p><h3>Manticore</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="minotaure" src="creatures\minotaure.jpg" alt="minotaure" title="minotaure"><p><h3>Minotaure</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="momie" src="creatures\momie.jpg" alt="momie" title="momie"><p><h3>Momie</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="nain" src="creatures\nain.jpg" alt="nain" title="nain"><p><h3>Nain</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="nymphes" src="creatures\dryade.jpg" alt="nymphes" title="nymphes"><p><h3>Nymphes</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="ogre" src="creatures\ogre.jpg" alt="ogre" title="ogre"><p><h3>Ogre</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="ogremutant" src="creatures\ogremutant.jpg" alt="ogremutant" title="ogremutant"><p><h3>Ogre Mutant</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="orc" src="creatures\orc.jpg" alt="orc" title="orc"><p><h3>Orc</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="satyre" src="creatures\satyre.jpg" alt="satyre" title="satyre"><p><h3>Satyre</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="serpentdemer" src="creatures\serpentdemer.jpg" alt="serpentdemer" title="serpentdemer"><p><h3>Serpent de mer</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="squelette" src="creatures\squelette.jpg" alt="squelette" title="squelette"><p><h3>Squelette</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="troll" src="creatures\troll.jpg" alt="troll" title="troll"><p><h3>Troll</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="vampire" src="creatures\vampire.jpg" alt="vampire" title="vampire"><p><h3>Vampire</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="wyverne" src="creatures\wyverne.jpg" alt="wyverne" title="wyverne"><p><h3>Wyverne</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                    <div id="cadre"><img id="zombi" src="creatures\zombi.jpg" alt="zombi" title="zombi"><p><h3>Zombi</h3></p>
+                    <table><tr><td>Caractéristiques</td><td>Attributs</td><td>Compétences</td></tr>
+                        <tr class="trcadre"><td class="tdcadre">FOR: </td><td class="tdcadre">PV: </td><td class="tdcadre"></td></tr>  
+                        <tr class="trcadre"><td class="tdcadre">CON: </td><td class="tdcadre">Blessure: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">DEX: </td><td class="tdcadre">modif. de dégats: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">TAI: </td><td class="tdcadre">Points de magie: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">INT: </td><td class="tdcadre">Mouvement: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">POU: </td><td class="tdcadre">Armure typique: </td><td class="tdcadre"></td></tr> 
+                        <tr class="trcadre"><td class="tdcadre">CHA: </td><td class="tdcadre">Facteur de Trésor: </td><td class="tdcadre"></td></tr> 
+                    </table><p><a href="#table">retour au tableau</a></p></div>
+
+                
+
+
+                    
+
+                </div>
+            </article></SECTION>
+    	<footer class="footer">
+            <p class="footer1">contact: nicolas.dossantos.542@gmail.com<br />
+            le jeu OpenQuest est sous license OGL (OPEN GAME License)</p>
+            <p class="footer1">Version originale: <a href="https://d101games.com/about/">Newt Newport</a><br />
+            Version française: <a href="https://d100.fr/a-propos/">James « Arasmo » Manez</a><br />mentions légales</p>
+
+
+        </footer>
+   	</body>
